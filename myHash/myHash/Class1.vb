@@ -1,4 +1,4 @@
-﻿Public Class Class1
+﻿Public Class myHash
     Public Function my_hash(ipt As String) As String
         Dim codes(61) As String
         Dim process(5), posnow As ULong
