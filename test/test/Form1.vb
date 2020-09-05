@@ -10,7 +10,7 @@
             rndnum(i) = Int(Rnd() * 256)
         Next
         rndpos = 1
-        psw = "123"
+        psw = "123333333"
         pospsw = 1
         name = "filee"
         pswlen = Len(psw)
@@ -33,6 +33,9 @@
         ProgressBar1.Maximum = fileleng
         ProgressBar1.Value = 0
 
+
+        ''''''''''''''''密码加密输入''''''''''''''''''''
+        FilePut(2, mhash.my_hash(psw))
         ''''''''''''''''文件名加密输入''''''''''''''''''''
 
         binval = Len(fname_s)
@@ -76,45 +79,13 @@
         fileleng = FileLen(fname_p)
         For i = 1 To fileleng
             FileGet(1, proc)
-
-            binstr = Dec2Bin(proc)
-            For j = 0 To 7
-                byte1(j) = Val(Mid(binstr, j + 1, 1))
-            Next
-
-            chasc = Asc(Mid(psw, pospsw, 1))
-            binstr = Dec2Bin(chasc)
-            For j = 0 To 7
-                byte2(j) = Val(Mid(binstr, j + 1, 1))
-            Next
+            proc = proc Xor Asc(Mid(psw, pospsw, 1))
+            proc = proc Xor Asc(Mid(pswhash, poshash, 1))
+            proc = proc Xor rndnum(rndpos)
             pospsw = pospsw Mod pswlen + 1
-
-
-            chasc = Asc(Mid(pswhash, poshash, 1))
-            binstr = Dec2Bin(chasc)
-            For j = 0 To 7
-                byte3(j) = Val(Mid(binstr, j + 1, 1))
-            Next
             poshash = poshash Mod 20 + 1
-
-
-            chasc = rndnum(rndpos)
-            binstr = Dec2Bin(chasc)
-            For j = 0 To 7
-                byte4(j) = Val(Mid(binstr, j + 1, 1))
-            Next
             rndpos = rndpos Mod 8 + 1
-
-            proc = 0
-            For j = 0 To 7
-                byte1(j) = byte1(j) Xor byte2(j)
-                byte1(j) = byte1(j) Xor byte3(j)
-                byte1(j) = byte1(j) Xor byte4(j)
-                proc = proc * 2 + byte1(j)
-            Next
             FilePut(2, proc)
-            'ProgressBar1.Value = i
-            'Label1.Text = i
         Next
 
         FileClose(2)
@@ -133,24 +104,37 @@
     End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim fname_p, fname_s, psw, pswhash, name As String
+        Dim pswget, psw, pswhash, name As String
         Dim chasc, rndnum(8), pswlen, byte1(7), byte2(7), byte3(7), byte4(7), binval, proc, pospsw, poshash, rndpos, namelen As Byte
         Dim fileleng As Long
         Dim binstr As String
         Dim mhash As New myHash.myHash
         FileOpen(1, "tmp.txt", OpenMode.Binary)
 
-        FileGet(1, namelen)
+
 
         rndpos = 1
-        psw = "123"
+        psw = "123333333"
         pospsw = 1
         pswlen = Len(psw)
         pswhash = mhash.my_hash(psw)
         poshash = 1
 
+        ''''''''''''''''''密码验证'''''''''''''''''''
+        pswget = ""
+        For i = 1 To 20
+            FileGet(1, chasc)
+            pswget = pswget + Chr(chasc)
+        Next
+        If pswget <> mhash.my_hash(psw) Then
+            MsgBox("no")
+            FileClose(1)
+            Exit Sub
+        End If
+
         '''''''''''''''原文件名解密'''''''''''''''''''''
         name = ""
+        FileGet(1, namelen)
         For i = 1 To namelen
             FileGet(1, binval)
             binstr = Dec2Bin(binval)
@@ -158,11 +142,7 @@
                 byte1(j) = Val(Mid(binstr, j + 1, 1))
             Next
             For j = 7 To 1 Step -1
-                If byte1(j) = byte1(j - 1) Then
-                    byte1(j) = 0
-                Else
-                    byte1(j) = 1
-                End If
+                byte1(j) = byte1(j) Xor byte1(j - 1)
             Next
             binval = 0
             For j = 0 To 7
@@ -180,11 +160,7 @@
                 byte1(j) = Val(Mid(binstr, j + 1, 1))
             Next
             For j = 7 To 1 Step -1
-                If byte1(j) = byte1(j - 1) Then
-                    byte1(j) = 0
-                Else
-                    byte1(j) = 1
-                End If
+                byte1(j) = byte1(j) Xor byte1(j - 1)
             Next
             binval = 0
             For j = 0 To 7
@@ -198,44 +174,15 @@
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = fileleng
         ProgressBar1.Value = 0
-        For i = Len(name) + 10 To fileleng
+        For i = Len(name) + 30 To fileleng
             FileGet(1, proc)
-
-            binstr = Dec2Bin(proc)
-            For j = 0 To 7
-                byte1(j) = Val(Mid(binstr, j + 1, 1))
-            Next
-
-            chasc = Asc(Mid(psw, pospsw, 1))
-            binstr = Dec2Bin(chasc)
-            For j = 0 To 7
-                byte2(j) = Val(Mid(binstr, j + 1, 1))
-            Next
+            proc = proc Xor Asc(Mid(psw, pospsw, 1))
+            proc = proc Xor Asc(Mid(pswhash, poshash, 1))
+            proc = proc Xor rndnum(rndpos)
             pospsw = pospsw Mod pswlen + 1
-
-            chasc = Asc(Mid(pswhash, poshash, 1))
-            binstr = Dec2Bin(chasc)
-            For j = 0 To 7
-                byte3(j) = Val(Mid(binstr, j + 1, 1))
-            Next
             poshash = poshash Mod 20 + 1
-
-            chasc = rndnum(rndpos)
-            binstr = Dec2Bin(chasc)
-            For j = 0 To 7
-                byte4(j) = Val(Mid(binstr, j + 1, 1))
-            Next
             rndpos = rndpos Mod 8 + 1
-
-            proc = 0
-            For j = 0 To 7
-                byte1(j) = byte1(j) Xor byte4(j)
-                byte1(j) = byte1(j) Xor byte3(j)
-                byte1(j) = byte1(j) Xor byte2(j)
-                proc = proc * 2 + byte1(j)
-            Next
             FilePut(2, proc)
-            ' ProgressBar1.Value = i
         Next
         FileClose(2)
         FileClose(1)

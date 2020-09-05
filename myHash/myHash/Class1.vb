@@ -15,7 +15,7 @@
             codes(i + 52) = CStr(i)
         Next
         src = ipt
-        For i = 1 To 1000
+        For i = 1 To 20
             For j = 1 To 4
                 process(j) = process(j + 1)
             Next
@@ -26,7 +26,7 @@
         For i = 1 To 5
             str = CStr(process(i)) + str
         Next
-        For i = 5 To 45 Step 2
+        For i = 5 To 44 Step 2
             tmp = Val(Mid(str, i, 2))
             tmp = tmp / 99 * 61
             sfinal = sfinal + codes(tmp)
