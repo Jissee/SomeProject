@@ -73,7 +73,6 @@
             Next
             FilePut(2, binval)
         Next
-        '
 
         ''''''''''''''文件加密输入''''''''''''''
         fileleng = FileLen(fname_p)
@@ -87,7 +86,6 @@
             rndpos = rndpos Mod 8 + 1
             FilePut(2, proc)
         Next
-
         FileClose(2)
         FileClose(1)
         'Kill(Application.StartupPath + "\tmp.txt")
@@ -110,8 +108,6 @@
         Dim binstr As String
         Dim mhash As New myHash.myHash
         FileOpen(1, "tmp.txt", OpenMode.Binary)
-
-
 
         rndpos = 1
         psw = "123333333"
@@ -187,7 +183,5 @@
         FileClose(2)
         FileClose(1)
     End Sub
-
-
 End Class
 
