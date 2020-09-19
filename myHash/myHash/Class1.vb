@@ -19,8 +19,8 @@
             For j = 1 To 4
                 process(j) = process(j + 1)
             Next
-            process(5) = ((process(5) + process(5) * posnow + Asc(Mid(src, posnow, 1) * i)) Mod 1000000000000) \ 2
-            process(5) = ((process(5) + process(5) * i + Asc(Mid(src, posnow, 1) * posnow)) Mod 1000000000000) \ 2
+            process(5) = ((process(5) + process(5) * posnow + Asc(Mid(src, posnow, 1)) * i) Mod 1000000000000) \ 2
+            process(5) = ((process(5) + process(5) * i + Asc(Mid(src, posnow, 1)) * posnow) Mod 1000000000000) \ 2
             posnow = posnow Mod Len(src) + 1
         Next
         For i = 1 To 5
