@@ -1,0 +1,15 @@
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\test.exe.config
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\test.exe
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\test.pdb
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\test.xml
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\myHash.dll
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\myHash.pdb
+D:\Gtihub\Repos\SomeProject\test\test\bin\Release\myHash.xml
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.Form1.resources
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.Resources.resources
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.vbproj.GenerateResource.cache
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.vbproj.CoreCompileInputs.cache
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.vbproj.CopyComplete
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.exe
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.xml
+D:\Gtihub\Repos\SomeProject\test\test\obj\Release\test.pdb

@@ -1,0 +1,9 @@
+D:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Release\myHash.dll
+D:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Release\myHash.pdb
+D:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Release\myHash.xml
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.Resources.resources
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.vbproj.GenerateResource.cache
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.vbproj.CoreCompileInputs.cache
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.dll
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.xml
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.pdb

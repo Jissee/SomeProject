@@ -1,0 +1,12 @@
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\bin\Debug\UploadToNeteaseMusic.exe.config
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\bin\Debug\UploadToNeteaseMusic.exe
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\bin\Debug\UploadToNeteaseMusic.pdb
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\bin\Debug\UploadToNeteaseMusic.xml
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.vbprojAssemblyReference.cache
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.Form1.resources
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.Resources.resources
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.vbproj.GenerateResource.cache
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.vbproj.CoreCompileInputs.cache
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.exe
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.xml
+D:\Gtihub\Repos\SomeProject\UploadToNeteaseMusic\UploadToNeteaseMusic\obj\Debug\UploadToNeteaseMusic.pdb

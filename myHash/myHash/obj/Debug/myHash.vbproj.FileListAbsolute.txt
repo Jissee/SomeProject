@@ -1,0 +1,10 @@
+D:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Debug\myHash.dll
+D:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Debug\myHash.pdb
+D:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Debug\myHash.xml
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.vbprojAssemblyReference.cache
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.Resources.resources
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.vbproj.GenerateResource.cache
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.vbproj.CoreCompileInputs.cache
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.dll
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.xml
+D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.pdb

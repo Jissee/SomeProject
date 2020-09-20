@@ -1,0 +1,16 @@
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\test.exe.config
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\test.exe
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\test.pdb
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\test.xml
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.Form1.resources
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.Resources.resources
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.vbproj.GenerateResource.cache
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.vbproj.CoreCompileInputs.cache
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.exe
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.xml
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.pdb
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\myHash.dll
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\myHash.pdb
+D:\Gtihub\Repos\SomeProject\test\test\bin\Debug\myHash.xml
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.vbproj.CopyComplete
+D:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.vbprojAssemblyReference.cache

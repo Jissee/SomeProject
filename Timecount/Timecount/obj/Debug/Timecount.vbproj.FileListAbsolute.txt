@@ -1,0 +1,12 @@
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\bin\Debug\Timecount.exe.config
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\bin\Debug\Timecount.exe
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\bin\Debug\Timecount.pdb
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\bin\Debug\Timecount.xml
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.vbprojAssemblyReference.cache
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.Form1.resources
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.Resources.resources
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.vbproj.GenerateResource.cache
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.vbproj.CoreCompileInputs.cache
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.exe
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.xml
+C:\Users\adMin\Source\Repos\Jissee\Timecount\Timecount\Timecount\obj\Debug\Timecount.pdb
