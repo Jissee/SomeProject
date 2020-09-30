@@ -25,12 +25,19 @@ Public Class Form1
     End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
         If fname_p = "" Then
             Label3.Text = "错误：文件未选择"
             CheckBox1.Checked = False
             Exit Sub
         End If
         If RadioButton1.Checked Then
+
+            If TextBox2.Text <> TextBox3.Text Then
+                Label3.Text = "错误：密码不一致"
+                CheckBox1.Checked = False
+                Exit Sub
+            End If
 
             Dim psw, pswhash As String
             Dim rndnum(8), pswlen, byte1(7), byte2(7), byte3(7), byte4(7), binval1, binval2, proc, pospsw, poshash, rndpos As Byte
@@ -42,17 +49,15 @@ Public Class Form1
             For i = 1 To 8
                 rndnum(i) = Int(Rnd() * 256)
             Next
-            rndpos = 1
             psw = TextBox2.Text
             If psw = "" Then
                 Label3.Text = "错误：密码不可为空"
                 CheckBox1.Checked = False
                 Exit Sub
             End If
-            pospsw = 1
+
             pswlen = Len(psw)
             pswhash = mhash.my_hash(psw)
-            poshash = 1
             If System.IO.File.Exists(fname_p) = False Then
                 Label3.Text = "错误：文件不存在"
                 CheckBox1.Checked = False
@@ -96,25 +101,21 @@ Public Class Form1
                 ofstream.WriteByte(binval1)
                 ofstream.WriteByte(binval2)
             Next
-            '
             ''''''''''''''随机数加密输入'''''''''''''''''''''
+            pospsw = 1
+            poshash = 1
             For i = 1 To 8
-                chasc1 = rndnum(i)
-                binstr1 = Dec2Bin(chasc1)
-                For j = 0 To 7
-                    byte1(j) = Val(Mid(binstr1, j + 1, 1))
-                Next
-                For j = 1 To 7
-                    byte1(j) = byte1(j) Xor byte1(j - 1)
-                Next
-                binval1 = 0
-                For j = 0 To 7
-                    binval1 = binval1 * 2 + byte1(j)
-                Next
-                ofstream.WriteByte(binval1)
+                proc = rndnum(i)
+                proc = proc Xor Asc(Mid(psw, pospsw, 1))
+                proc = proc Xor Asc(Mid(pswhash, poshash, 1))
+                pospsw = pospsw Mod pswlen + 1
+                poshash = poshash Mod 20 + 1
+                ofstream.WriteByte(proc)
             Next
-
             ''''''''''''''文件加密输入''''''''''''''
+            pospsw = 1
+            poshash = 1
+            rndpos = 1
             fileleng = FileLen(fname_p)
             For i = 1 To fileleng
                 proc = ifstream.ReadByte()
@@ -150,7 +151,6 @@ Public Class Form1
                 CheckBox1.Checked = False
                 Exit Sub
             End If
-            rndpos = 1
             psw = TextBox2.Text
             If psw = "" Then
                 Label3.Text = "错误：密码不可为空"
@@ -158,10 +158,8 @@ Public Class Form1
                 Exit Sub
             End If
             Dim ifstream As IO.FileStream = New IO.FileStream(fname_p, IO.FileMode.Open)
-            pospsw = 1
             pswlen = Len(psw)
             pswhash = mhash.my_hash(psw)
-            poshash = 1
 
             ''''''''''''''''''密码验证'''''''''''''''''''
             pswget = ""
@@ -203,23 +201,21 @@ Public Class Form1
             Dim ofstream As IO.FileStream = New IO.FileStream(name, IO.FileMode.Create)
 
             ''''''''''''''''''随机数解密'''''''''''''''''''''
+            pospsw = 1
+            poshash = 1
             For i = 1 To 8
-                chasc1 = ifstream.ReadByte
-                binstr1 = Dec2Bin(chasc1)
-                For j = 0 To 7
-                    byte1(j) = Val(Mid(binstr1, j + 1, 1))
-                Next
-                For j = 7 To 1 Step -1
-                    byte1(j) = byte1(j) Xor byte1(j - 1)
-                Next
-                binval1 = 0
-                For j = 0 To 7
-                    binval1 = binval1 * 2 + byte1(j)
-                Next
-                rndnum(i) = binval1
+                proc = ifstream.ReadByte
+                proc = proc Xor Asc(Mid(psw, pospsw, 1))
+                proc = proc Xor Asc(Mid(pswhash, poshash, 1))
+                pospsw = pospsw Mod pswlen + 1
+                poshash = poshash Mod 20 + 1
+                rndnum(i) = proc
             Next
-            ''''
+
             '''''''''''''''文件解密''''''''''''''''''''''
+            pospsw = 1
+            poshash = 1
+            rndpos = 1
             fileleng = FileLen(fname_p)
             For i = Len(name) * 2 + 30 To fileleng
                 proc = ifstream.ReadByte

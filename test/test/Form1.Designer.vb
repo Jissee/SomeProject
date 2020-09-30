@@ -33,19 +33,21 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(54, 12)
+        Me.TextBox1.Location = New System.Drawing.Point(111, 12)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(257, 21)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(317, 5)
+        Me.Button1.Location = New System.Drawing.Point(382, 5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(63, 32)
         Me.Button1.TabIndex = 2
@@ -67,7 +69,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(317, 43)
+        Me.Button2.Location = New System.Drawing.Point(382, 43)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(63, 32)
         Me.Button2.TabIndex = 5
@@ -77,7 +79,7 @@ Partial Class Form1
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(14, 77)
+        Me.RadioButton1.Location = New System.Drawing.Point(10, 121)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(47, 16)
         Me.RadioButton1.TabIndex = 7
@@ -88,7 +90,7 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(114, 79)
+        Me.RadioButton2.Location = New System.Drawing.Point(107, 121)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(47, 16)
         Me.RadioButton2.TabIndex = 8
@@ -107,15 +109,16 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(54, 50)
+        Me.TextBox2.Location = New System.Drawing.Point(111, 50)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(257, 21)
         Me.TextBox2.TabIndex = 10
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(176, 101)
+        Me.Label3.Location = New System.Drawing.Point(168, 151)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(41, 12)
         Me.Label3.TabIndex = 11
@@ -124,18 +127,37 @@ Partial Class Form1
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(17, 101)
+        Me.CheckBox1.Location = New System.Drawing.Point(10, 150)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(144, 16)
         Me.CheckBox1.TabIndex = 12
         Me.CheckBox1.Text = "操作完成后删除源文件"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(8, 91)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(101, 12)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "确认密码(仅加密)"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(111, 88)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox3.Size = New System.Drawing.Size(257, 21)
+        Me.TextBox3.TabIndex = 14
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(387, 129)
+        Me.ClientSize = New System.Drawing.Size(457, 174)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox2)
@@ -164,4 +186,6 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox3 As TextBox
 End Class
