@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccurateCalculation", "AccurateCalculation\AccurateCalculation.vbproj", "{AAE718A6-A99E-4596-9D59-98C3BDEAF91F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAE718A6-A99E-4596-9D59-98C3BDEAF91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE718A6-A99E-4596-9D59-98C3BDEAF91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE718A6-A99E-4596-9D59-98C3BDEAF91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE718A6-A99E-4596-9D59-98C3BDEAF91F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {919BFEB7-511E-4343-8F11-DEA5C66D76DB}
+	EndGlobalSection
+EndGlobal
