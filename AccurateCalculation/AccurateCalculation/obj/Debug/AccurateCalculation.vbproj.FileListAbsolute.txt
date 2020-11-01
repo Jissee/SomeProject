@@ -10,3 +10,15 @@ D:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\Ac
 D:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.exe
 D:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.xml
 D:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.pdb
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\bin\Debug\AccurateCalculation.exe.config
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\bin\Debug\AccurateCalculation.exe
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\bin\Debug\AccurateCalculation.pdb
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\bin\Debug\AccurateCalculation.xml
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.Form1.resources
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.Resources.resources
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.exe
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.xml
+E:\Gtihub\Repos\SomeProject\AccurateCalculation\AccurateCalculation\obj\Debug\AccurateCalculation.pdb
