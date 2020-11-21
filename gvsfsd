@@ -1,0 +1,24 @@
+[33m1eee711[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: commit: upd
+[33m56103e4[m HEAD@{1}: pull --verbose --progress --no-edit --no-stat --recurse-submodules=no origin: Merge made by the 'recursive' strategy.
+[33m5acad9c[m HEAD@{2}: commit (amend): upd
+[33m038ef17[m HEAD@{3}: checkout: moving from master to master
+[33m038ef17[m HEAD@{4}: reset: moving to 038ef1729114a68410f3ee8d1c16e49f96ed1772
+[33m1bc016c[m HEAD@{5}: reset: moving to HEAD
+[33m1bc016c[m HEAD@{6}: reset: moving to HEAD
+[33m1bc016c[m HEAD@{7}: commit (amend): upd
+[33m6bb70a2[m HEAD@{8}: commit (amend): upd
+[33m038ef17[m HEAD@{9}: commit: upd
+[33md437842[m HEAD@{10}: commit: upd
+[33md1faa87[m HEAD@{11}: commit: upd
+[33m1e6bd71[m HEAD@{12}: commit: upd
+[33m45bd0bb[m[33m ([m[1;33mtag: 2[m[33m)[m HEAD@{13}: commit: upd
+[33m923950b[m[33m ([m[1;33mtag: 1[m[33m)[m HEAD@{14}: commit: upd
+[33m8aca18c[m HEAD@{15}: commit: upd
+[33m4a08e3a[m HEAD@{16}: commit: upd
+[33m104f73e[m HEAD@{17}: reset: moving to 104f73e7277c0ddd5484ba906c57d492c97aa4c7
+[33m104f73e[m HEAD@{18}: commit: upd
+[33m439f715[m HEAD@{19}: commit: upd
+[33ma761a70[m HEAD@{20}: commit: upd
+[33m25d0d34[m HEAD@{21}: commit: upd
+[33m2471465[m HEAD@{22}: commit: upd
+[33m684dc6a[m HEAD@{23}: clone: from https://github.com/Jissee/SomeProject.git
