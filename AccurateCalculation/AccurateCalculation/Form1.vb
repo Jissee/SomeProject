@@ -42,10 +42,6 @@
         If lenleft > lenright Then lenmax = lenleft Else lenmax = lenright
         flag = False
         stsum = ""
-        For i = 0 To lenmax
-            l(i) = 0
-            r(i) = 0
-        Next
         For i = 1 To lenleft
             l(i - 1) = Val(Mid(leftnum, Len(leftnum) - i + 1, 1))
         Next
@@ -84,10 +80,6 @@
         lenleft = Len(leftnum)
         lenright = Len(rightnum)
         stsum = ""
-        For i = 0 To lenleft
-            l(i) = 0
-            r(i) = 0
-        Next
         For i = 1 To lenleft
             l(i - 1) = Val(Mid(leftnum, Len(leftnum) - i + 1, 1))
         Next
@@ -124,10 +116,6 @@
         lenright = Len(rightnum)
         If lenleft > lenright Then lenmax = lenleft Else lenmax = lenright
         stsum = ""
-        For i = 0 To lenmax
-            l(i) = 0
-            r(i) = 0
-        Next
         For i = 1 To lenleft
             l(i - 1) = Val(Mid(leftnum, Len(leftnum) - i + 1, 1))
         Next
@@ -193,3 +181,4 @@ Public Class LessThanZeroException : Inherits Exception
     End Sub
 
 End Class
+
