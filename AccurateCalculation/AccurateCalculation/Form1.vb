@@ -13,19 +13,7 @@ Public Class Form1
         Dim s As String
         Dim a, b, t As Int64
         Dim cmpres As Boolean
-        MsgBox(UI_Pow("17", "17"))
-
-        Do
-            a = Rnd() * 1000000
-            b = Rnd() * 10000
-
-            s = UI_Mod(CStr(a), CStr(b))
-            t = CStr(a Mod b)
-            If CStr(a Mod b) <> UI_Mod(CStr(a), CStr(b)) Then
-                Throw New Exception
-            End If
-        Loop
-
+        MsgBox(UI_Pow("10", "10"))
     End Sub
     Public Function UI_Add(leftnum As String, rightnum As String) As String
         leftnum = SF_Adj(leftnum)

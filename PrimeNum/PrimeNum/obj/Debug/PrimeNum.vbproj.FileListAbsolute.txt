@@ -1,0 +1,12 @@
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\PrimeNum.exe.config
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\PrimeNum.exe
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\PrimeNum.pdb
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\PrimeNum.xml
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.Form1.resources
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.Resources.resources
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.exe
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.xml
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.pdb
