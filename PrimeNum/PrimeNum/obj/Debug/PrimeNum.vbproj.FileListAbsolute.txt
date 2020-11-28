@@ -10,3 +10,7 @@ E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.vbproj.CoreComp
 E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.exe
 E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.xml
 E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.pdb
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\AccCal.dll
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\AccCal.pdb
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\bin\Debug\AccCal.xml
+E:\Gtihub\Repos\SomeProject\PrimeNum\PrimeNum\obj\Debug\PrimeNum.vbproj.CopyComplete

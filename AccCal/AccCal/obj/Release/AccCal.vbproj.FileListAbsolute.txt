@@ -1,0 +1,9 @@
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\bin\Release\AccCal.dll
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\bin\Release\AccCal.pdb
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\bin\Release\AccCal.xml
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\obj\Release\AccCal.Resources.resources
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\obj\Release\AccCal.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\obj\Release\AccCal.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\obj\Release\AccCal.dll
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\obj\Release\AccCal.xml
+E:\Gtihub\Repos\SomeProject\AccCal\AccCal\obj\Release\AccCal.pdb
