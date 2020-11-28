@@ -1,6 +1,6 @@
 ﻿
 Public Class Form1
-    Const NUMMAX = 2000
+    Dim nummax = 20000
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
 
@@ -10,19 +10,18 @@ Public Class Form1
         Catch ex As AccessViolationException
             MsgBox(ex.Message)
         End Try
-        Dim s As String
-        Dim a, b, t As Int64
+        Dim s, x As String
+        Dim a, b, t As Int32
         Dim cmpres As Boolean
-        MsgBox(UI_Pow("10", "10"))
+
+
     End Sub
     Public Function UI_Add(leftnum As String, rightnum As String) As String
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
-        If Len(leftnum) > NUMMAX Or Len(rightnum) > NUMMAX Then
+        If Len(leftnum) > nummax Or Len(rightnum) > nummax Then
             Throw New NumberTooLargeException("数字太大")
         End If
 
-        Dim l(NUMMAX), r(NUMMAX), s(NUMMAX), lenleft, lenright, lenmax As Integer
+        Dim l(nummax), r(nummax), s(nummax), lenleft, lenright, lenmax As Integer
         Dim stsum As String
         Dim flag As Boolean
         lenleft = Len(leftnum)
@@ -56,15 +55,13 @@ Public Class Form1
         Return stsum
     End Function
     Public Function UI_Sub(leftnum As String, rightnum As String) As String
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
-        If Len(leftnum) > NUMMAX Or Len(rightnum) > NUMMAX Then
+        If Len(leftnum) > nummax Or Len(rightnum) > nummax Then
             Throw New NumberTooLargeException("数字太大")
         End If
         If SI_Cmp(leftnum, rightnum) < 0 Then
             Throw New LessThanZeroException("结果小于0")
         End If
-        Dim l(NUMMAX), r(NUMMAX), s(NUMMAX), lenleft, lenright As Integer
+        Dim l(nummax), r(nummax), s(nummax), lenleft, lenright As Integer
         Dim stsum As String
         Dim flag As Boolean
         lenleft = Len(leftnum)
@@ -96,12 +93,10 @@ Public Class Form1
         Return stsum
     End Function
     Public Function UI_Mul(leftnum As String, rightnum As String) As String
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
-        If Len(leftnum) > NUMMAX \ 2 Or Len(rightnum) > NUMMAX \ 2 Then
+        If Len(leftnum) > nummax \ 2 Or Len(rightnum) > nummax \ 2 Then
             Throw New NumberTooLargeException("数字太大(乘法因数小于1000位)")
         End If
-        Dim l(NUMMAX \ 2), r(NUMMAX \ 2), s(1000, NUMMAX), ss(NUMMAX), lenleft, lenright, lenmax As Integer
+        Dim l(nummax \ 2), r(nummax \ 2), s(nummax \ 2, nummax), ss(nummax), lenleft, lenright, lenmax As Integer
         Dim stsum As String
         Dim flag As Boolean
         lenleft = Len(leftnum)
@@ -142,9 +137,7 @@ Public Class Form1
         Return stsum
     End Function
     Public Function UI_Div(leftnum As String, rightnum As String) As String
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
-        If Len(leftnum) > NUMMAX Or Len(rightnum) > NUMMAX Then
+        If Len(leftnum) > nummax Or Len(rightnum) > nummax Then
             Throw New NumberTooLargeException("数字太大")
         End If
         If rightnum = 0 Or rightnum = "" Then
@@ -198,14 +191,54 @@ Public Class Form1
         Loop
     End Function
     Public Function UI_Mod(leftnum As String, rightnum As String) As String
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
-        ' a mod b =a-(a div b)*b
-        Return SF_Adj(UI_Sub(leftnum, UI_Mul(UI_Div(leftnum, rightnum), rightnum)))
+        If Len(leftnum) > nummax Or Len(rightnum) > nummax Then
+            Throw New NumberTooLargeException("数字太大")
+        End If
+        If rightnum = 0 Or rightnum = "" Then
+            Throw New DivideByZeroException
+        End If
+        If SI_Cmp(leftnum, rightnum) = 0 Then
+            Return "0"
+        End If
+        If SI_Cmp(leftnum, rightnum) = -1 Then
+            Return leftnum
+        End If
+        Dim lenleft, lenright, numnow As Integer
+        Dim stsum, subnow, lft, lftrest, rgt, subprev As String
+        Dim last, start As Boolean
+        stsum = ""
+        last = False
+        start = False
+        lenleft = Len(leftnum)
+        lenright = Len(rightnum)
+        rgt = rightnum
+        lft = Mid(leftnum, 1, lenright)
+        lftrest = Mid(leftnum, lenright + 1)
+        If Len(lftrest) = 0 Then
+            last = True
+        End If
+        Do
+            numnow = 1
+            subnow = rgt
+            subprev = "0"
+            Do While SI_Cmp(subnow, lft) <= 0
+                numnow += 1
+                subprev = subnow
+                subnow = UI_Add(subnow, rgt)
+            Loop
+            lft = UI_Sub(lft, subprev)
+            lft = lft + Mid(lftrest, 1, 1)
+            lftrest = Mid(lftrest, 2)
+            If lft = "" Then lft = "0"
+            If last = True Then
+                Return lft
+            End If
+            If Len(lftrest) = 0 Then
+                last = True
+            End If
+        Loop
     End Function
     Public Function UI_Pow(leftnum As String, rightnum As String) As String
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
         Dim result, numnow As String
         result = 1
         numnow = "0"
@@ -217,8 +250,6 @@ Public Class Form1
 
     End Function
     Public Function SI_Cmp(leftnum As String, rightnum As String) As Integer
-        leftnum = SF_Adj(leftnum)
-        rightnum = SF_Adj(rightnum)
         Dim result As Integer
         If leftnum = rightnum Then
             Return 0
