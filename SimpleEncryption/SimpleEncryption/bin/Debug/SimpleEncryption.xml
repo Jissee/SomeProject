@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SimpleEncryption
+</name>
+</assembly>
+<members>
+<member name="T:SimpleEncryption.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SimpleEncryption.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SimpleEncryption.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:SimpleEncryption.Form1.Dec2Bin(System.Int32)">
+<summary>
+123
+</summary>
+<param name="dec">十进制整数</param>
+</member>
+</members>
+</doc>

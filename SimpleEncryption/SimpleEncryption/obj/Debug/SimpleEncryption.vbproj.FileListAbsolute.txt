@@ -1,0 +1,16 @@
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.Form1.resources
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.Resources.resources
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\SimpleEncryption.exe.config
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\SimpleEncryption.exe
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\SimpleEncryption.pdb
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\SimpleEncryption.xml
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHash.dll
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHash.pdb
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHash.xml
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.vbproj.CopyComplete
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.exe
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.xml
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.pdb

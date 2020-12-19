@@ -30,7 +30,8 @@ namespace myHashCC
                     process[j] = process[j + 1];
 
                 }
-                process[5] = (process[5] + process[5] * posnow + Convert.ToInt64(src.Substring(posnow, 1)) * i) % 1000000000000 / 2;
+                process[5] = (int)((process[5] + process[5] * posnow + Convert.ToInt32(src.Substring(posnow, 1)) * i) % 1000000000000 / 2);
+                process[5] = (int)((process[5] + process[5] * i + Convert.ToInt32(src.Substring(posnow, 1)) * posnow) % 1000000000000 / 2);
             }
 
 

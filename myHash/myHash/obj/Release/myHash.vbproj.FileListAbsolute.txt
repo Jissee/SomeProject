@@ -7,3 +7,13 @@ D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.vbproj.CoreCompileI
 D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.dll
 D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.xml
 D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.pdb
+E:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Release\myHash.dll
+E:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Release\myHash.pdb
+E:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Release\myHash.xml
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.Resources.resources
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.dll
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.xml
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Release\myHash.pdb

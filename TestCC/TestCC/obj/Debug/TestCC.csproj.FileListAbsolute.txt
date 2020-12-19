@@ -1,0 +1,10 @@
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.csprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.Form1.resources
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.Properties.Resources.resources
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.csproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.csproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\bin\Debug\TestCC.exe.config
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\bin\Debug\TestCC.exe
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\bin\Debug\TestCC.pdb
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.exe
+E:\Gtihub\Repos\SomeProject\TestCC\TestCC\obj\Debug\TestCC.pdb

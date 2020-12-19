@@ -6,6 +6,8 @@ Public Class Form1
         OpenFileDialog1.InitialDirectory = "D:"
         OpenFileDialog1.RestoreDirectory = False
         OpenFileDialog1.FileName = ""
+        Dim mhash As New myHash.myHash
+        MsgBox(mhash.my_hash("1"))
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         OpenFileDialog1.ShowDialog()

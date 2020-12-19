@@ -51,8 +51,9 @@
     <ApplicationIcon>lock.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="myHash">
-      <HintPath>..\..\myHash\myHash\bin\Release\myHash.dll</HintPath>
+    <Reference Include="myHash, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\myHash\myHash\bin\Debug\myHash.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
