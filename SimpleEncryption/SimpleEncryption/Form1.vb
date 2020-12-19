@@ -14,6 +14,11 @@ Public Class Form1
         fname_s = OpenFileDialog1.SafeFileName
 
     End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
+
     '''<summary>
     '''123
     '''</summary>
@@ -268,5 +273,7 @@ Public Class Form1
         End If
         CheckBox1.Checked = False
     End Sub
+
+
 End Class
 
