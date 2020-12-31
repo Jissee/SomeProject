@@ -19,13 +19,11 @@ namespace TestCC
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string ipt = "A";
+			string ipt = "a";
 			string[] codes = new string[62];
-			uint[] process = new uint[6];
-			int posnow = 1;
+			ulong[] process = new ulong[6];
+			int posnow = 1, codeasc = 0;
 			uint tmp = 'A';
-            MessageBox.Show(tmp.ToString());
-
 			string src="1", str="", sfinal = "";
 			for (uint i = 0; i <= 25; i++)
 			{
@@ -36,8 +34,6 @@ namespace TestCC
 			{
 				codes[i + 52] += i;
 			}
-			//MessageBox.Show(Convert.ToString(Encoding.ASCII.GetBytes("A")[0]));
-			//Encoding.ASCII.GetBytes(src.Substring(posnow, 1)))[0]
 			src = " " + ipt;
 			for (uint i = 1; i <= 20; i++)
 			{
@@ -45,8 +41,9 @@ namespace TestCC
 				{
 					process[j] = process[j + 1];
 				}
-				process[5] = (uint)(((process[5] + process[5] * posnow + (Encoding.ASCII.GetBytes(src.Substring(posnow, 1))[0]) * i) % 10000000000000) / 2);
-                process[5] = (uint)((process[5] + (uint)((ulong)process[5] * (ulong)i) + Encoding.ASCII.GetBytes(src.Substring(posnow, 1))[0] * posnow) % 10000000000000 / 2);
+				codeasc = Asc(src.Substring(posnow, 1));
+				process[5] = (ulong)(((process[5] + process[5] * (ulong)posnow + (ulong)(codeasc * i)) % 1000000000000) / 2);
+                process[5] = (ulong)(((ulong)process[5] + (ulong)process[5] * (ulong)i + (ulong)codeasc * (ulong)posnow) % 1000000000000 / 2);
 				posnow = posnow % (src.Length - 1) + 1;
 			}
 			for(uint i = 1; i <= 5; i++)
@@ -57,7 +54,7 @@ namespace TestCC
 			for(int i = 5; i <= 44; i += 2)
             {
 				tmp = uint.Parse(str.Substring(i, 2));
-				tmp = tmp * 61 / 99;
+				tmp = (uint)(int)((double)tmp / 99.0 * 61.0 + 0.5);
 				sfinal = sfinal + codes[tmp];
 			}
 			MessageBox.Show(sfinal);
@@ -65,7 +62,23 @@ namespace TestCC
 
 
 		}
-
+		/// <summary>
+		/// 123
+		/// </summary>
+		/// 
+		/// <returns></returns>
+		/// <param name="a">121</param>
+		private int asd(int a,int b)
+        {
+			int c = a + b;
+			return 0;
+        }
+		public int Asc(string inp)
+        {
+			int ret;
+			ret = Encoding.ASCII.GetBytes(inp)[0];
+			return ret;
+		}
 	}
 	}
 
