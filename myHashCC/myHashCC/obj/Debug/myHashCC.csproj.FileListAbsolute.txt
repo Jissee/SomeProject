@@ -1,0 +1,2 @@
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\myHashCC.csprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\myHashCC.csproj.CoreCompileInputs.cache

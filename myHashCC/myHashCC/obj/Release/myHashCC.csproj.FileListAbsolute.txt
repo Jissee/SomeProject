@@ -1,0 +1,5 @@
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\bin\Release\myHashCC.dll
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\bin\Release\myHashCC.pdb
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Release\myHashCC.csproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Release\myHashCC.dll
+E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Release\myHashCC.pdb

@@ -1,9 +1,0 @@
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\bin\Debug\netstandard2.0\myHashCC.deps.json
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\bin\Debug\netstandard2.0\myHashCC.dll
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\bin\Debug\netstandard2.0\myHashCC.pdb
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\netstandard2.0\myHashCC.csprojAssemblyReference.cache
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\netstandard2.0\myHashCC.AssemblyInfoInputs.cache
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\netstandard2.0\myHashCC.AssemblyInfo.cs
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\netstandard2.0\myHashCC.csproj.CoreCompileInputs.cache
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\netstandard2.0\myHashCC.dll
-E:\Gtihub\Repos\SomeProject\myHashCC\myHashCC\obj\Debug\netstandard2.0\myHashCC.pdb

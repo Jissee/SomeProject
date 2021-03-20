@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JsOn
+</name>
+</assembly>
+<members>
+<member name="T:JsOn.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:JsOn.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:JsOn.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:JsOn.Form1.severity">
+ <summary>
+ 选择发生错误(如无法找到属性)时候的严重性
+ 0-忽略；1-提示；2-错误
+ </summary>
+</member>
+</members>
+</doc>

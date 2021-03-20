@@ -1,0 +1,12 @@
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\bin\Debug\JsOn.exe.config
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\bin\Debug\JsOn.exe
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\bin\Debug\JsOn.pdb
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\bin\Debug\JsOn.xml
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.Form1.resources
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.Resources.resources
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.exe
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.xml
+E:\Gtihub\Repos\SomeProject\JsOn\JsOn\obj\Debug\JsOn.pdb

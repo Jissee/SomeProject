@@ -1,0 +1,16 @@
+{
+	"name": "John Doe",
+	"age": 18,
+	"address": {
+		"country": "china",
+		"zip-code": "10000",
+		"prop": {
+			"a": {
+				"aa": 123,
+					"bb": "12"
+			}
+		}
+	},
+	"message": "",
+	"array": [12, 23, 34]
+}

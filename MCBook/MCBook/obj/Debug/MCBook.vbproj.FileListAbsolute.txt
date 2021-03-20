@@ -1,0 +1,12 @@
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\bin\Debug\MCBook.exe.config
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\bin\Debug\MCBook.exe
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\bin\Debug\MCBook.pdb
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\bin\Debug\MCBook.xml
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.Form1.resources
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.Resources.resources
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.exe
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.xml
+E:\Gtihub\Repos\SomeProject\MCBook\MCBook\obj\Debug\MCBook.pdb

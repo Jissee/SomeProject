@@ -63,22 +63,30 @@ namespace TestCC
 
 		}
 		/// <summary>
-		/// 123
+		/// 返回int值，该值表示为字符相对应的字符代码
 		/// </summary>
 		/// 
 		/// <returns></returns>
-		/// <param name="a">121</param>
-		private int asd(int a,int b)
+		/// <param name="str">必需。任何有效char或string表达式。如果str是string表达式，仅字符串的第一个字符用于输入</param>
+
+		private int Asc(string str)
         {
-			int c = a + b;
-			return 0;
-        }
-		public int Asc(string inp)
-        {
-			int ret;
-			ret = Encoding.ASCII.GetBytes(inp)[0];
-			return ret;
+			return Encoding.ASCII.GetBytes(str)[0];
 		}
+		/// <summary>
+		/// 返回int值，该值表示为字符相对应的字符代码
+		/// </summary>
+		/// 
+		/// <returns></returns>
+		/// <param name="str">必需。任何有效char或string表达式。如果str是string表达式，仅字符串的第一个字符用于输入</param>
+
+		private int Asc(char str)
+        {
+            char[] ch = new char[1];
+            ch[0] = str;
+            return Encoding.ASCII.GetBytes(ch)[0];
+        }
+
 	}
 	}
 
