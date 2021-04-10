@@ -7,7 +7,7 @@
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        severity = 1
+        severity = 0
         Try
             Label1.Text = GetValueByName("json.json", TextBox1.Text)
         Catch ex As NotFoundException
@@ -51,6 +51,7 @@
         inquo = 0
         Do While a <> -1
             a = ifstream.ReadByte()
+
             b = ChrW(a)
             If a = 34 Then
                 inquo = 1 - inquo

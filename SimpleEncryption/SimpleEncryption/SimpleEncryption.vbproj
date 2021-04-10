@@ -48,8 +48,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="myHashCC">
-      <HintPath>.\myHashCC.dll</HintPath>
+    <Reference Include="myHash">
+      <HintPath>..\..\myHash\myHash\bin\Debug\myHash.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

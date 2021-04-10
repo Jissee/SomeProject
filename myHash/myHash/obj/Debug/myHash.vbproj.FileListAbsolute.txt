@@ -8,3 +8,12 @@ D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.vbproj.CoreCompileInp
 D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.dll
 D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.xml
 D:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.pdb
+E:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Debug\myHash.dll
+E:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Debug\myHash.pdb
+E:\Gtihub\Repos\SomeProject\myHash\myHash\bin\Debug\myHash.xml
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.Resources.resources
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.dll
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.xml
+E:\Gtihub\Repos\SomeProject\myHash\myHash\obj\Debug\myHash.pdb

@@ -64,7 +64,7 @@ Public Class Form1
             Dim fileleng As Long
             Dim chasc1, chasc2 As Integer
             Dim binstr1, binstr2 As String
-            Dim mhash As New myHashCC.MyHashCC
+            Dim mhash As New myHash.myHash
             Randomize()
             For i = 1 To 8
                 rndnum(i) = Int(Rnd() * 256)
@@ -77,7 +77,7 @@ Public Class Form1
             End If
 
             pswlen = Len(psw)
-            pswhash = mhash.My_HashCC(psw)
+            pswhash = mhash.my_hash(psw)
             If System.IO.File.Exists(fname_p) = False Then
                 Label3.Text = "错误：文件不存在"
                 CheckBox1.Checked = False
@@ -97,7 +97,7 @@ Public Class Form1
             fileleng = FileLen(fname_p)
             ''''''''''''''''密码加密输入''''''''''''''''''''
             For i = 1 To 20
-                binval1 = Asc(Mid(mhash.My_HashCC(pswhash), i, 1))
+                binval1 = Asc(Mid(mhash.my_hash(pswhash), i, 1))
                 ofstream.WriteByte(binval1)
             Next
             ''''''''''''''''文件名加密输入''''''''''''''''''''
@@ -175,7 +175,7 @@ Public Class Form1
             Dim fileleng As Long
             Dim chasc1 As Integer
             Dim binstr1, binstr2 As String
-            Dim mhash As New myHashCC.MyHashCC
+            Dim mhash As New myHash.myHash
             If System.IO.File.Exists(fname_p) = False Then
                 Label3.Text = "错误：文件不存在"
                 CheckBox1.Checked = False
@@ -189,7 +189,7 @@ Public Class Form1
             End If
             Dim ifstream As IO.FileStream = New IO.FileStream(fname_p, IO.FileMode.Open)
             pswlen = Len(psw)
-            pswhash = mhash.My_HashCC(psw)
+            pswhash = mhash.my_hash(psw)
 
             ''''''''''''''''''密码验证'''''''''''''''''''
             pswget = ""
@@ -197,7 +197,7 @@ Public Class Form1
                 chasc1 = ifstream.ReadByte
                 pswget = pswget + Chr(chasc1)
             Next
-            If pswget <> mhash.My_HashCC(mhash.My_HashCC(psw)) Then
+            If pswget <> mhash.my_hash(mhash.my_hash(psw)) Then
                 Label3.Text = "错误：密码错误或所选文件尚未加密"
                 ifstream.Close()
                 CheckBox1.Checked = False

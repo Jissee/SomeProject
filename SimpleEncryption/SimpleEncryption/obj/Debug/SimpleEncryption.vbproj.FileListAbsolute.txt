@@ -11,4 +11,6 @@ E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEn
 E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.exe
 E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.xml
 E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\obj\Debug\SimpleEncryption.pdb
-E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHashCC.dll
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHash.dll
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHash.pdb
+E:\Gtihub\Repos\SomeProject\SimpleEncryption\SimpleEncryption\bin\Debug\myHash.xml
