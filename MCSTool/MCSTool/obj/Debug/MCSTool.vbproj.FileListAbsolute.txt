@@ -1,0 +1,13 @@
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\bin\Debug\MCSTool.exe.config
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\bin\Debug\MCSTool.exe
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\bin\Debug\MCSTool.pdb
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\bin\Debug\MCSTool.xml
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.vbprojAssemblyReference.cache
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.Form1.resources
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.Resources.resources
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.vbproj.GenerateResource.cache
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.vbproj.CoreCompileInputs.cache
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.exe
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.xml
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.pdb
+E:\Gtihub\Repos\SomeProject\MCSTool\MCSTool\obj\Debug\MCSTool.Form2.resources

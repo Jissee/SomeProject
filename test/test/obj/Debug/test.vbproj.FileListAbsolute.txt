@@ -30,3 +30,4 @@ E:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.vbproj.CopyComplete
 E:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.exe
 E:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.xml
 E:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.pdb
+E:\Gtihub\Repos\SomeProject\test\test\obj\Debug\test.Form2.resources
