@@ -13,6 +13,7 @@
     Private Sub 打开ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 打开ToolStripMenuItem.Click
 
         If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            ToolStripStatusLabel3.Text = OpenFileDialog1.FileName
             If Strings.Right(OpenFileDialog1.SafeFileName, 3) = "yml" Then
                 Dim ifreader As New IO.StreamReader(OpenFileDialog1.FileName)
                 ListBox1.Items.Clear()
@@ -52,21 +53,57 @@
     End Sub
 
     Private Sub 编辑ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 编辑ToolStripMenuItem.Click
-        Dim str As String
-        Dim ch As String
+        Dim str, ch As String
         Dim flag As Integer = 1
-        str = ListBox1.SelectedItem.ToString()
+        Dim isarrvalu As Boolean = False
+        str = ListBox1.SelectedItem
+        itemindex = ListBox1.SelectedIndex
         For i = 1 To Len(str)
             ch = Mid(str, i, 1)
+            If ch = "#" Then
+                prop = str
+                Form4.Show()
+                Exit Sub
+            End If
+            If ch = "-" And flag = 1 Then
+                isarrvalu = True
+            End If
+            If ch <> " " And flag = 1 Then
+                depth = i - 1
+                flag = 2
+            End If
 
-            If ch = ":" Then flag = True
+            If ch = ":" Then flag = 3
 
-            If flag = False And ch <> " " Then
+            If flag = 2 And ch <> " " Then
                 prop += ch
-            ElseIf ch <> " " Then
+            ElseIf flag = 3 And ch <> " " And ch <> ":" Then
                 valu += ch
             End If
         Next
+        If valu <> "" Then
+            Form2.Show() 'jian zhi dui
+        ElseIf isarrvalu = False Then
+
+            Form3.Show() 'jie dian/shu zu
+        Else
+            prop = Mid(prop, 2)
+            Form5.Show() 'shu zu zhi
+        End If
+
+
+    End Sub
+
+    Private Sub 删除ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 删除ToolStripMenuItem.Click
+        ListBox1.Items.RemoveAt(ListBox1.SelectedIndex)
+
+    End Sub
+
+    Private Sub 键值对ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 键值对ToolStripMenuItem.Click
+
+        itemindex = ListBox1.SelectedIndex
+        ListBox1.Items.Insert(itemindex, "")
+
         Form2.Show()
     End Sub
 End Class
